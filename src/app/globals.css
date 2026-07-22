@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 97%;
+    --foreground: 220 47% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 47% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 47% 16%;
+    --primary: 213 67% 17%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 213 30% 92%;
+    --accent-foreground: 220 47% 16%;
+    --destructive: 0 84% 56%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 25% 90%;
+    --input: 215 25% 90%;
+    --ring: 213 67% 17%;
+    --radius: 0.75rem;
+  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+}

@@ -125,6 +125,13 @@ export interface Church {
   founded_at?:string|null;
   status_admin?:ChurchStatus;
   observations?:string|null;
+  observations?:string|null;
+  // Momento da Generosidade (esboço em CommunitiesAdmin — ainda não grava no banco)
+  pix_key?: string | null;
+  pix_key_type?: string | null;
+  bank_info?: string | null;
+  qr_code_url?: string | null;
+}
 }
 export interface ChurchDependencies {
   children:number; life_groups:number; members:number; reports:number; total:number;

@@ -1,4 +1,5 @@
 "use client";
+import * as Gv from "@/services/giving";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase/client";
 import * as P from "@/services/profiles";

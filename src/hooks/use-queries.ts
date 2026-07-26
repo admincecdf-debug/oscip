@@ -41,6 +41,12 @@ export const useMemberCard = (memberId: string | null) =>
     queryFn: () => Cid.getMemberCard(supabase, memberId as string),
     enabled: !!memberId,
   });
+export const useChurchGivingInfo = (churchId: string | null) =>
+  useQuery({
+    queryKey: ["church-giving-info", churchId],
+    queryFn: () => Gv.getChurchGivingInfo(supabase, churchId as string),
+    enabled: !!churchId,
+  });
 export const useChurchAncestry  = () => useQuery({ queryKey: ["church-ancestry"], queryFn: () => C.listChurchAncestry(supabase) });
 export const useDistricts      = () => useQuery({ queryKey: ["districts"],  queryFn: () => C.listDistricts(supabase) });
 export const useAreas          = () => useQuery({ queryKey: ["areas"],      queryFn: () => C.listAreas(supabase) });
